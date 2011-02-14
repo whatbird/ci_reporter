@@ -101,6 +101,8 @@ module CI
       end
 
       def before_table_row(table_row)
+        return unless table_row.respond_to?('name')
+
         row = table_row # shorthand for table_row
         # check multiple versions of the row and try to find the best fit
         outline = (row.respond_to? :name)             ? row.name :
@@ -111,6 +113,8 @@ module CI
       end
 
       def after_table_row(table_row)
+        return unless table_row.respond_to?('failed?')
+
         if @header_row
           @header_row = false
           return
