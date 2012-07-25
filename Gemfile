@@ -6,7 +6,7 @@
 
 source :rubygems
 
-gem 'builder'
+gem 'builder', '~> 3.0.0'
 group :development do
   gem 'hoe'
   gem 'rubyforge'

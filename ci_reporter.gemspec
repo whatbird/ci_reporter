@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<builder>, [">= 2.1.2"])
+      s.add_runtime_dependency(%q<builder>, ["~> 3.0.0"])
       s.add_development_dependency(%q<rubyforge>, [">= 2.0.4"])
       s.add_development_dependency(%q<hoe>, ["~> 2.12"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.10"])

@@ -43,7 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder
+  builder (~> 3.0.0)
   cucumber
   hoe
   jruby-openssl
